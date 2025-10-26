@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartFood | New Query</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar glass">
+    <div class="logo">🥗 Smart<span>Food</span></div>
+    <nav><a href="dashboard.html" class="btn secondary">← Back</a></nav>
+  </header>
+
+  <main class="container fade-in">
+    <h2>Raise New Query</h2>
+
+    <form id="queryForm" class="card glass form-animate">
+      <div class="form-group">
+        <label for="supplier">Supplier</label>
+        <select id="supplier" required>
+          <option value="">Select Supplier</option>
+          <option value="FreshFarm Foods">FreshFarm Foods</option>
+          <option value="GreenHarvest">GreenHarvest</option>
+          <option value="Sunrise Mills">Sunrise Mills</option>
+          <option value="OceanFresh">OceanFresh</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option value="Dairy">Dairy</option>
+          <option value="Produce">Produce</option>
+          <option value="Grains">Grains</option>
+          <option value="Seafood">Seafood</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Query Topic</label>
+        <select id="topic" required>
+          <option value="">Select Topic</option>
+          <option>Allergen Information</option>
+          <option>Certificate Expiry</option>
+          <option>Ingredient Safety</option>
+          <option>Supplier Compliance</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="details">Query Details</label>
+        <textarea id="details" rows="4" placeholder="Type your question..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn primary glow full-width">Submit Query</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 SmartFood Solutions Inc.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

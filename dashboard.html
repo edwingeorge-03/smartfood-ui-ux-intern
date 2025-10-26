@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartFood | Supplier Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar glass">
+   <h10 class="hero-title">
+  <img src="https://cdn-icons-png.flaticon.com/512/706/706164.png" 
+       alt="SmartFood Logo" class="logo-icon">
+  SmartFood Solutions
+</h10>
+
+    <nav>
+      <a href="new-query.html" class="btn primary glow">+ New Query</a>
+    </nav>
+  </header>
+
+  <main class="container fade-in">
+    <h2>Supplier Queries Overview</h2>
+
+    <div class="table-container card glass">
+      <table id="supplierTable">
+        <thead>
+          <tr>
+            <th>Supplier</th>
+            <th>Category</th>
+            <th>Last Query</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>FreshFarm Foods</td>
+            <td>Dairy</td>
+            <td>Allergen Info</td>
+            <td><span class="badge pending">Pending</span></td>
+            <td><a href="query-status.html" class="link">View</a></td>
+          </tr>
+          <tr>
+            <td>GreenHarvest</td>
+            <td>Produce</td>
+            <td>Certificate Expiry</td>
+            <td><span class="badge resolved">Resolved</span></td>
+            <td><a href="query-status.html" class="link">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 SmartFood Solutions Inc.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
